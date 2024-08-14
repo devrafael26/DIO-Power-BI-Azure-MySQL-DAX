@@ -3,6 +3,8 @@
 #### - Conectando o Power BI a um Banco de dados MySQL na Azure, tratar o dados, fazer algumas mesclas, agrupar e posteriormente construir um pequeno relatório de RH.
 #### - Modelagem Dimensional Star Schema
 #### - Criação de tabelas Dimensão e Fato através de uma tabela origem. Utilização de DAX para criar tabelas e colunas.
+#####   Através da sample financials do Power BI, desenvolvi um modelo dimensional do tipo Star Schema, onde foi criada a tabela Fato e suas respectivas tabelas Dimensão. Além disso foi criada a tabela Calendário, usando DAX.
+
 #####   d_Calendario = CALENDAR(MIN(f_Vendas[Date]), MAX(f_Vendas[Date])) --> para criar a tabela d_Calendario
 #####   Day = WEEKDAY('d_Calendario'[Date]) --> para criar a coluna Day
 #####   Day of Week = FORMAT('d_Calendario'[Date], "DDDD") --> para criar a coluna Day of Week
